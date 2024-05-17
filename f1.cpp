@@ -52,14 +52,14 @@ void printFlightInfo(struct FlightInfo flight[])
 }
 int main()
 {
-	struct FlightInfo flight[2];
+	struct FlightInfo flight[10];
 	//Declaring variable do basic tasks.
 	char destination[30];
 	char date[30];
 	int i = 0;
 	printf("Enter the destination and date of the flights\n");
 	//For loop is inizalized to get 10 user input of flights
-	for (i = 0; i < 10; i++)
+	for (i = 0; i < 10 ; i++)
 	{
 		printf("FLight no %d:\n", i + 1);
 		printf("Destination :");
