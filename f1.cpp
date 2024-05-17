@@ -1,6 +1,6 @@
 /*
-* FILE : f3.cpp
-* PROJECT : Focused assignment 3
+* FILE : f1.cpp
+* PROJECT : Focused assignment 1
 * PROGRAMMER : Rachit jagdishbhai patel
 * FIRST VERSION : 2024-05-17
 * DESCRIPTION : Program to store the data in malloc memory allocation
