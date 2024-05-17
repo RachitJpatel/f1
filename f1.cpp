@@ -1,3 +1,10 @@
+/*
+* FILE : f3.cpp
+* PROJECT : Focused assignment 3
+* PROGRAMMER : Rachit jagdishbhai patel
+* FIRST VERSION : 2024-05-17
+* DESCRIPTION : Program to store the data in malloc memory allocation
+*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -19,7 +26,7 @@ void fillflightInfo(struct FlightInfo *flight, char* destination, char* date)
 void printFlightInfo(struct FlightInfo flight[])
 {
 	printf("%-20s %s\n", "destination", "date");
-	for (int i = 0; i < 2; i++)
+	for (int i = 0; i < 10; i++)
 	{
 		printf("%-20s %s\n", flight[i].destination, flight[i].date);
 	}
@@ -31,7 +38,7 @@ int main()
 	char date[30];
 	int i = 0;
 	printf("Enter the destination and date of the flights\n");
-	for (i = 0; i < 2; i++)
+	for (i = 0; i < 10; i++)
 	{
 		printf("FLight no %d:\n", i + 1);
 		printf("Destination :");
