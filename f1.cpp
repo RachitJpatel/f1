@@ -32,6 +32,13 @@ void fillflightInfo(struct FlightInfo *flight, char* destination, char* date)
 	flight->date = (char*)malloc(strlen(date) + 1);
 	strcpy(flight->date, date);
 }
+//
+// FUNCTION: printflightInfo
+//DESCRIPTION:
+//The function will print the data.
+//PARAMETERS: 
+// struct FlightInfo flight[]: This the variable for structure and it will provide the data
+//
 void printFlightInfo(struct FlightInfo flight[])
 {
 	printf("%-20s %s\n", "destination", "date");
