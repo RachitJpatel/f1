@@ -9,8 +9,11 @@
 #include<stdlib.h>
 #include<string.h>
 #pragma warning(disable: 4996) 
+//Declaring fillflightInfo function
 void fillflightInfo(struct FlightInfo* flight, char* destination, char* date);
+//Declaring printFlightInfo
 void printFlightInfo(struct FlightInfo flight[]);
+//Declaring an structure name flightInfo
 struct FlightInfo {
 	char* destination;
 	char* date;
@@ -50,21 +53,29 @@ void printFlightInfo(struct FlightInfo flight[])
 int main()
 {
 	struct FlightInfo flight[2];
+	//Declaring variable do basic tasks.
 	char destination[30];
 	char date[30];
 	int i = 0;
 	printf("Enter the destination and date of the flights\n");
+	//For loop is inizalized to get 10 user input of flights
 	for (i = 0; i < 10; i++)
 	{
 		printf("FLight no %d:\n", i + 1);
 		printf("Destination :");
+		//This will store the destination 
 		fgets(destination, sizeof(destination), stdin);
+		//The statement will remove the newline character
 		destination[strcspn(destination, "\n")] = '\0';
 		printf("Date :");
+		//This will store the date
 		fgets(date, sizeof(date), stdin);
+		//The statement will remove the newline character
 		date[strcspn(date, "\n")] = '\0';
+		//fillflightInfo function is called to store the data
 		fillflightInfo(&flight[i], destination, date);
 	}
+	//printflightInfo function is called to print the data of the file.
 	printFlightInfo(flight);
 	return 0;
 }
