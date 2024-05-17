@@ -57,7 +57,7 @@ int main()
 	char destination[30];
 	char date[30];
 	int i = 0;
-	printf("Enter the destination and date of the flights\n");
+	printf("Enter destination and date of 10 flights\n");
 	//For loop is inizalized to get 10 user input of flights
 	for (i = 0; i < 10 ; i++)
 	{
