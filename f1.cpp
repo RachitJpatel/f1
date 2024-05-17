@@ -15,6 +15,15 @@ struct FlightInfo {
 	char* destination;
 	char* date;
 };
+//
+// FUNCTION: fillflightInfo
+//DESCRIPTION:
+//The function will  store the value of the data
+//PARAMETERS: 
+// //struct FlightInfo flight: This the variable for structure.
+//char destination: The parameter will store the value of destination of flights
+//char date: The parameter will store the value of date of flights
+//
 void fillflightInfo(struct FlightInfo *flight, char* destination, char* date)
 {
 	flight->destination = (char*)malloc(strlen(destination) + 1);
